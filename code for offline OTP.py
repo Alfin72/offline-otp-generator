@@ -1,9 +1,13 @@
 from datetime import datetime
 import hashlib
 
-sec_word = "alfin"
+sec_word = []
 Temp_OTP = []
 
+
+def get_pass():
+    sec_id = input("Enter the password to continue to use network")
+    sec_word.append(sec_id)
 
 def get_time():
     today = datetime.now()
